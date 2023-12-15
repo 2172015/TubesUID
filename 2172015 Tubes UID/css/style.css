@@ -22,6 +22,8 @@ body {
     flex-grow: 3;
     padding: 3px;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .header .logo {
@@ -51,11 +53,11 @@ body {
     border-radius: 20px;
     border: none;
     outline: none;
+    text-indent: 15px;
 }
 
 .text-input::placeholder{
     padding-bottom: 5px;
-    padding-left: 10px;
     color: #E8C898;
 }
 
@@ -66,6 +68,12 @@ body {
 .header i {
     color: white;
     font-size: 30px;
+}
+
+#logout {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .main {
@@ -82,6 +90,9 @@ body {
     flex: 20%;
     padding-left: 10px;
     padding-top: 30px;
+    position: sticky;
+    top: 10%;
+    align-self: flex-start;
 }
 .button a {
     color : #FFC267;
@@ -98,6 +109,14 @@ body {
     margin-top: 3px;
     font-size: 20px;
 }
+
+hr {
+    margin: 20px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .button-chosen a {
     color : white;
     text-decoration: none;
@@ -105,11 +124,12 @@ body {
 }
 
 .button-chosen {
-    background-color: #FFC774;
+    background-color: #ffc062;
+    box-shadow: 1px 2px #d6d6d6;
 }
 
 .button:hover {
-    background-color: #E5E5E5;
+    background-color: #dadada;
 }
 
 /* FEEDS SETTINGS */
@@ -121,21 +141,34 @@ body {
 .feeds h1 {
     color:#FFB13E ;
     padding-left: 20px;
+    margin-top: 20px;
 }
 
 .feeds iframe {
-    min-height: 500vh;
-    width: 1000px;
+    height: 450px;
+    width: 800px;
 }
 
 .feeds-iframe {
     padding-top: 50px;
+}
+
+.feed {
+    background-color: #FFC267;
+    height: 700px;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 /* SIDE SETTINGS */
 
 .side {
     flex: 20%;
     padding: 5px 20px;
+    position: sticky;
+    top: 10%;
+    align-self: flex-start;
 }
 
 .side h3 {
