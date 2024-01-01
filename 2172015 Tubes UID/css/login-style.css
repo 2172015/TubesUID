@@ -9,12 +9,11 @@
 
 
 body{
-    background-color: #FFD99F;
+    background-color: #fff3e7;
 }
 
 .container {
     display: flex;
-    background-color: #FEC36C;
     height: 500px;
     width: 400px;
     margin: auto;
@@ -24,6 +23,8 @@ body{
     flex-direction: column;
     border-radius: 20px;
     padding: 50px;
+    text-align: center;
+    background-color: #FEC36C;
 }
 
 .logo {
@@ -41,18 +42,34 @@ body{
     color: white;
 }
 
+.input-text {
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    outline: none;
+    text-indent: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 30vh;
+}
+
+.input-text::placeholder{
+    padding-bottom: 5px;
+    color: #ffffff;
+    opacity: 45%;
+}
+
 .button {
-    background-color: #6CB859;
-    border: none;
-    margin: 10px;
-    border-radius: 40px;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-weight: bold;
+    border: 3px solid #ffffff;
+    background: none;
+    border-radius: 50px;
+    width: 10vh;
+    height: 25px;
+    color: white;
+    margin: 0;
 }
 
 .button:hover {
     background-color: white;
-    color: #FFB13E;
+    color: #FEC36C;
 }

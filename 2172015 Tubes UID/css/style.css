@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: #EDEDED;
+    background-color: #ffffff;
 }
 
 .header{
     min-width: 100vh;
-    height: 55px;
+    height: 80px;
     background-color: #FFB13E;
     color: white;
     display: flex;
@@ -24,10 +24,11 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .header .logo {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
     margin-right: auto;
 }
@@ -47,13 +48,14 @@ body {
 }
 
 .text-input{
-    width: 600px;
-    height: 30px;
+    width: 100vh;
+    height: 4vh;
     background: #FFEDD1;
-    border-radius: 20px;
+    border-radius: 80px;
     border: none;
     outline: none;
     text-indent: 15px;
+    font-size: 18px;
 }
 
 .text-input::placeholder{
@@ -67,13 +69,18 @@ body {
 
 .header i {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
+    margin: 0 7px;
+    margin-top: 3px;
 }
 
 #logout {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .main {
@@ -84,18 +91,38 @@ body {
     border: solid black 1px;
 } /*temp border*/
 
+/* CLEAR SETTINGS */
+
+.clear1 {
+    flex: 20%;
+    background-color: #FBFDFF;
+}
+
+.clear2 {
+    flex: 15%;
+    background-color: #FBFDFF;
+}
+
+.clear1 h1, .clear2 h1 {
+    color: #FBFDFF;
+}
+
+
 /* NAV SETTINGS */
 
 .nav {
-    flex: 20%;
+    flex: 10%;
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 20vh;
+    padding-right: 10px;
+    top: 7vh;
     position: sticky;
-    top: 10%;
     align-self: flex-start;
+    background-color: #FBFDFF;
+    height: 95vh;
 }
 .button a {
-    color : #FFC267;
+    color : #9ACEFF;
     text-decoration: none;
     font-weight: 600;
 }
@@ -107,7 +134,10 @@ body {
     padding: 6px;
     padding-left: 20px;
     margin-top: 3px;
-    font-size: 20px;
+    font-size: 25px;
+    width: 250px;
+    height: 45px;
+    margin: auto;
 }
 
 hr {
@@ -124,22 +154,24 @@ hr {
 }
 
 .button-chosen {
-    background-color: #ffc062;
+    background-color: #62B4FF;
     box-shadow: 1px 2px #d6d6d6;
 }
 
 .button:hover {
-    background-color: #dadada;
+    text-decoration: underline;
+    text-decoration-color: #62B4FF;
 }
 
 /* FEEDS SETTINGS */
 
 .feeds {
-    flex: 60%;
+    flex: 40%;
+    padding: 0 20px;
 }
 
 .feeds h1 {
-    color:#FFB13E ;
+    color:#FFB547 ;
     padding-left: 20px;
     margin-top: 20px;
 }
@@ -154,7 +186,7 @@ hr {
 }
 
 .feed {
-    background-color: #FFC267;
+    background-color: #008EA2;
     height: 700px;
     width: 600px;
     margin: auto;
@@ -164,15 +196,17 @@ hr {
 /* SIDE SETTINGS */
 
 .side {
-    flex: 20%;
-    padding: 5px 20px;
+    flex: 15%;
+    padding: 50px 15px;
+    min-height: 500vh;
     position: sticky;
-    top: 10%;
+    top: 55px;
     align-self: flex-start;
+    background-color: #FBFDFF;
 }
 
 .side h3 {
-    color: #FFB13E;
+    color: #FFB547;
 }
 .side iframe {
     height: 500px;

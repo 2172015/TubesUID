@@ -8,10 +8,9 @@
 }
 
 .container {
-    background-color:#CCCCCC;
     margin: 10px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .container a {
@@ -22,4 +21,35 @@
 
 .container a:hover {
     text-decoration: underline;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 65px;
+    margin-right: 10px;
+    color: blue;
+}
+
+.account-name {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.follower {
+    font-size: 10px;
+}
+
+button {
+    background: #0085FF;
+    color: #ffffff;
+    border: none;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 25px;
 }
