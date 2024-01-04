@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #FBFDFF;
 }
 
 .header{
@@ -140,6 +140,7 @@ body {
     margin: auto;
 }
 
+
 hr {
     margin: 20px;
     width: 230px;
@@ -167,7 +168,11 @@ hr {
 
 .feeds {
     flex: 40%;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    background-color: #ffffff;
 }
 
 .feeds h1 {
