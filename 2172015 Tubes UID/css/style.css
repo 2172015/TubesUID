@@ -13,7 +13,7 @@ body {
 
 .header{
     min-width: 100vh;
-    height: 80px;
+    height: 4rem;
     background-color: #FFB13E;
     color: white;
     display: flex;
@@ -25,6 +25,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.header .logo-img {
+    width: 4.1rem;
+    height: 3rem;
 }
 
 .header .logo {
@@ -49,7 +54,7 @@ body {
 
 .text-input{
     width: 100vh;
-    height: 4vh;
+    height: 4.5vh;
     background: #FFEDD1;
     border-radius: 80px;
     border: none;
@@ -69,18 +74,17 @@ body {
 
 .header i {
     color: white;
-    font-size: 35px;
-    margin: 0 7px;
-    margin-top: 3px;
+    font-size: 1.8rem;
+    margin: 0 0.3rem;
+    margin-top: 0.5rem;
 }
 
 #logout {
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 1.2rem;
     margin-left: 30px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    margin-right: 2rem;
 }
 
 .main {
@@ -113,12 +117,12 @@ body {
 .nav {
     flex: 10%;
     padding-left: 10px;
-    padding-top: 20vh;
+    padding-top: 7rem;
     padding-right: 10px;
     top: 7vh;
     position: sticky;
     align-self: flex-start;
-    background-color: #FBFDFF;
+    background-color: #ecf6ff;
     height: 95vh;
 }
 .button a {
@@ -129,14 +133,12 @@ body {
 
 .button-chosen, .button {
     border-radius: 16px;
-    width: 200px;
-    height: 40px;
+    width: 15rem;
+    height: 2.7rem;
     padding: 6px;
     padding-left: 20px;
     margin-top: 3px;
-    font-size: 25px;
-    width: 250px;
-    height: 45px;
+    font-size: 1.5rem;
     margin: auto;
 }
 
@@ -169,7 +171,7 @@ hr {
 .feeds {
     flex: 40%;
     padding: 0 10px;
-    margin-top: 7rem;
+    margin-top: 2rem;
     margin-left: 3rem;
     margin-right: 1rem;
     background-color: #ffffff;
@@ -178,7 +180,6 @@ hr {
 .feeds h1 {
     color:#FFB547 ;
     padding-left: 20px;
-    margin-top: 20px;
 }
 
 .feeds iframe {
@@ -191,19 +192,35 @@ hr {
 }
 
 .feed {
-    background-color: #008EA2;
-    height: 700px;
-    width: 600px;
+    background-color: #c7c7c7;
+    height: 30rem;
+    width: 27rem;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 5rem;
     border-radius: 10px;
 }
+
+.feed-username {
+    display: flex;
+}
+
+.feed-username i {
+    font-size: 3rem;
+    color: #00FFA3;
+}
+
+.feed-username h3 {
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    font-size: 1.2rem;
+}
+
 /* SIDE SETTINGS */
 
 .side {
     flex: 15%;
-    padding: 50px 15px;
-    min-height: 500vh;
+    padding: 3.5rem 15px;
     position: sticky;
     top: 55px;
     align-self: flex-start;
