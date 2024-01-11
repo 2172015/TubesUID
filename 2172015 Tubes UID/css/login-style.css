@@ -24,7 +24,7 @@ body{
     border-radius: 20px;
     padding: 50px;
     text-align: center;
-    background-color: #FFB13E;
+    background-color: #FEC36C;
 }
 
 .logo {
@@ -63,10 +63,13 @@ body{
     border: 3px solid #ffffff;
     background: none;
     border-radius: 50px;
-    width: 13.5vh;
+    width: 10vh;
     height: 25px;
     color: white;
-    margin: 1vh;
+    margin: 0;
+    text-decoration: none;
+    /*padding for a href*/
+    padding: 0 2.5vh;
 }
 
 .button:hover {

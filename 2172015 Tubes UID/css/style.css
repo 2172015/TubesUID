@@ -13,7 +13,7 @@ body {
 
 .header{
     min-width: 100vh;
-    height: 4rem;
+    height: 80px;
     background-color: #FFB13E;
     color: white;
     display: flex;
@@ -25,11 +25,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-}
-
-.header .logo-img {
-    width: 4.1rem;
-    height: 3rem;
 }
 
 .header .logo {
@@ -54,7 +49,7 @@ body {
 
 .text-input{
     width: 100vh;
-    height: 4.5vh;
+    height: 4vh;
     background: #FFEDD1;
     border-radius: 80px;
     border: none;
@@ -74,17 +69,17 @@ body {
 
 .header i {
     color: white;
-    font-size: 1.8rem;
-    margin: 0 0.3rem;
-    margin-top: 0.5rem;
+    font-size: 35px;
+    margin: 0 7px;
+    margin-top: 3px;
 }
 
 #logout {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    margin-left: 30px;
-    margin-right: 2rem;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .main {
@@ -97,7 +92,7 @@ body {
 
 /* CLEAR SETTINGS */
 
-.clear1 {
+/*.clear1 {
     flex: 20%;
     background-color: #FBFDFF;
 }
@@ -105,7 +100,7 @@ body {
 .clear2 {
     flex: 15%;
     background-color: #FBFDFF;
-}
+}*/
 
 .clear1 h1, .clear2 h1 {
     color: #FBFDFF;
@@ -115,15 +110,15 @@ body {
 /* NAV SETTINGS */
 
 .nav {
-    flex: 10%;
-    padding-left: 10px;
-    padding-top: 7rem;
+    flex: 20%;
+    padding-top: 2vh;
     padding-right: 10px;
-    top: 7vh;
+    top: 10vh;
     position: sticky;
     align-self: flex-start;
-    background-color: #ecf6ff;
-    height: 95vh;
+    background-color: #FBFDFF;
+    min-height: 100%;
+    margin-right: auto;
 }
 .button a {
     color : #9ACEFF;
@@ -132,20 +127,21 @@ body {
 }
 
 .button-chosen, .button {
-    border-radius: 16px;
-    width: 15rem;
-    height: 2.7rem;
+    border-radius: 0 16px 16px 0;
+    width: 200px;
+    height: 40px;
     padding: 6px;
-    padding-left: 20px;
-    margin-top: 3px;
-    font-size: 1.5rem;
-    margin: auto;
+    padding-left: 30px;
+    font-size: 30px;
+    width: 100%;
+    height: 3.5rem;
+    margin-right: auto;
 }
 
 
 hr {
     margin: 20px;
-    width: 230px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -161,44 +157,35 @@ hr {
     box-shadow: 1px 2px #d6d6d6;
 }
 
+.button {
+    transition: all;
+    transition-duration: 300ms;
+}
+
 .button:hover {
-    text-decoration: underline;
-    text-decoration-color: #62B4FF;
+    background-color: #d1e7fd;
 }
 
 /* FEEDS SETTINGS */
 
 .feeds {
-    flex: 40%;
+    flex: 60%;
     padding: 0 10px;
-    margin-top: 2rem;
     margin-left: 3rem;
     margin-right: 1rem;
-    background-color: #ffffff;
+    background-color: #FBFDFF;
+    padding-bottom: 5rem;
 }
 
 .feeds h1 {
     color:#FFB547 ;
     padding-left: 20px;
+    margin-top: 20px;
 }
 
-.feeds iframe {
-    height: 450px;
-    width: 800px;
-}
-
-.feeds-iframe {
-    padding-top: 50px;
-}
-
-.feed {
-    background-color: #c7c7c7;
-    height: 30rem;
-    width: 27rem;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 5rem;
-    border-radius: 10px;
+.feed-container {
+    margin: 3rem auto;
+    width: 70%;
 }
 
 .feed-username {
@@ -206,23 +193,93 @@ hr {
 }
 
 .feed-username i {
-    font-size: 3rem;
-    color: #00FFA3;
+    font-size: 2rem;
 }
 
-.feed-username h3 {
-    margin-top: 0.6rem;
-    margin-left: 0.6rem;
-    font-size: 1.2rem;
+.feed-username p {
+    font-size:  1rem;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+
+.feed-title {
+    margin-top: 0.5rem;
+    font-size: large
+}
+
+.feed1 {
+    background-color: #FFD99F;
+    height: 35rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+
+.feed2 {
+    background-color: #FFD99F;
+    min-height: 15rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    text-align: justify;
+    color: #000000;
+    overflow: auto;
+}
+
+.feed-likebox {
+    background-color: #FFD99F;
+    border: none;
+    width: 25%;
+    height: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.feed-likebox-button {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /*overflow: hidden;*/
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.feed-likebox-button {
+    font-size: 0.8rem;
+    color: #000;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.feed-likebox-button:hover {
+    font-size: 1rem;
+}
+
+.feed-likebox-button i {
+    margin: 0 0.2rem;
+}
+
+.feed-likebox-button .like-box-number {
+    margin-right: 0.5rem;
 }
 
 /* SIDE SETTINGS */
 
 .side {
-    flex: 15%;
-    padding: 3.5rem 15px;
+    flex: 20%;
+    padding: 50px 15px;
+    min-height: 100%;
     position: sticky;
-    top: 55px;
+    top: 10vh;
     align-self: flex-start;
     background-color: #FBFDFF;
 }
@@ -233,4 +290,3 @@ hr {
 .side iframe {
     height: 500px;
 }
-
