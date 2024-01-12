@@ -32,6 +32,12 @@ body {
     font-weight: bolder;
     margin-right: auto;
 }
+
+.header img {
+    display: block;
+    width: 3rem;
+    margin: 0 0.6rem;
+}
 /*.searchbar {
     border: #FFEDD1 2px solid;
     padding: 3px;
@@ -49,18 +55,21 @@ body {
 
 .text-input{
     width: 100vh;
-    height: 4vh;
-    background: #FFEDD1;
+    height: 5vh;
+    background: #8A6225;
     border-radius: 80px;
     border: none;
     outline: none;
-    text-indent: 15px;
+    text-indent: 5%;
     font-size: 18px;
+    background-image: url(../images/searchicon2.png);
+    background-repeat: no-repeat;
+    background-position: 0.5rem 50%;
 }
 
 .text-input::placeholder{
     padding-bottom: 5px;
-    color: #E8C898;
+    color: #fff;
 }
 
 .header .right {
@@ -113,11 +122,11 @@ body {
     flex: 20%;
     padding-top: 2vh;
     padding-right: 10px;
-    top: 10vh;
+    top: 15%;
     position: sticky;
     align-self: flex-start;
     background-color: #FBFDFF;
-    min-height: 100%;
+    min-height: 150%;
     margin-right: auto;
 }
 .button a {
@@ -128,13 +137,11 @@ body {
 
 .button-chosen, .button {
     border-radius: 0 16px 16px 0;
-    width: 200px;
-    height: 40px;
+    height: 2.5rem;
     padding: 6px;
-    padding-left: 30px;
-    font-size: 30px;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
     width: 100%;
-    height: 3.5rem;
     margin-right: auto;
 }
 
@@ -231,7 +238,8 @@ hr {
 .feed-likebox {
     background-color: #FFD99F;
     border: none;
-    width: 25%;
+    min-width: 25%;
+    max-width: 35%;
     height: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
@@ -245,7 +253,6 @@ hr {
     text-align: center;
     display: flex;
     flex-direction: row;
-    /*overflow: hidden;*/
     align-items: center;
     justify-content: center;
     background-color: transparent;
@@ -276,10 +283,10 @@ hr {
 
 .side {
     flex: 20%;
-    padding: 50px 15px;
-    min-height: 100%;
+    padding: 0 15px;
+    min-height: 50%;
     position: sticky;
-    top: 10vh;
+    top: 15%;
     align-self: flex-start;
     background-color: #FBFDFF;
 }
@@ -288,5 +295,5 @@ hr {
     color: #FFB547;
 }
 .side iframe {
-    height: 500px;
+    min-height: 500PX
 }
