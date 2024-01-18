@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Communify</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/account-style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="header">
-        <span class="logo"><i class='bx bx-circle'></i>Communify</span>
+        <img src="images/Logo.png" alt=""><span class="logo">Communify</span>
         <div class="searchbar">
             <form id="searchform" method="get">
                 <input type="text" placeholder="Search" class="text-input">
@@ -18,8 +18,49 @@
         <div class="right">
             <a href="#"><i class='bx bx-bell'></i></a>
             <a href="#"><i class='bx bx-envelope'></i></a>
-            <a href="account-page.html" id="profile"><i class='bx bx-circle'></i><i class='bx bx-chevron-down'></i></a>
+            <a href="account-page.html" id="profile"><i class='bx bxs-circle'></i><i class='bx bx-chevron-down'></i></a>
             <a href="login-page.html" id="logout"> Logout </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="nav">
+            <h1>Settings</h1>
+            <div class="nav-buttons-container">
+                <div class="nav-button">
+                    <a href="#"> Account </a>
+                    <a href="#"> Notifications </a>
+                    <a href="#"> Files </a>
+                </div>
+                <div class="back-button">
+                    <a href="main-page.html"> <i class='bx bxs-chevron-left' ></i> Back </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Account</h1>
+            <div class="content-container">
+                <div class="account-data">
+                    <h3>Account Data</h3>
+                    <p>Name : Dave Andrew</p>
+                    <p>Birthdate : 29 July 2003</p>
+                    <p>Gender : Man</p>
+                    <p>Email : rdaveandrew@gmail.com</p>
+                    <p>Phone Number : +62 821-3744-8477</p>
+                </div>
+                <div class="profile-picture-container">
+                    <div class="profile-picture">
+                    </div>
+                    <a href="#"> Change Profile Picture </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-content">
+            <a href="#"> How to change my password</a>
+            <a href="#"> How to turn on Notifications </a>
+            <a href="#"> Where can I see my posts </a>
         </div>
     </div>
 </body>

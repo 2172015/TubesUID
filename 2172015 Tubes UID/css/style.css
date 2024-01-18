@@ -138,9 +138,9 @@ body {
 .button-chosen, .button {
     border-radius: 0 16px 16px 0;
     height: 2.5rem;
-    padding: 6px;
+    padding: 7px;
     padding-left: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 100%;
     margin-right: auto;
 }
@@ -191,8 +191,31 @@ hr {
 }
 
 .feed-container {
-    margin: 3rem auto;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
     width: 70%;
+}
+
+/* width */
+.feed2::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+.feed2::-webkit-scrollbar-track {
+    background: #f3f3f3; 
+}
+   
+  /* Handle */
+.feed2::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+    border-radius: 20px; 
+}
+  
+  /* Handle on hover */
+.feed2::-webkit-scrollbar-thumb:hover {
+    background: #9b9b9b; 
 }
 
 .feed-username {
@@ -215,18 +238,25 @@ hr {
 }
 
 .feed1 {
-    background-color: #FFD99F;
-    height: 35rem;
+    background-color: #000;
     width: 100%;
     margin-top: 0.5rem;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 50%;
 }
 
 .feed2 {
     background-color: #FFD99F;
     min-height: 15rem;
+    max-height: 20rem;
     padding: 1rem 1.5rem;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 100%;
     margin-top: 0.5rem;
     border-radius: 10px;
